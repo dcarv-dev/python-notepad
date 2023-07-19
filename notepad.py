@@ -192,13 +192,6 @@ class Window:
         about_window.iconbitmap(r"src/notepad_icon.ico")
         about_window.resizable(width=False, height=False)
 
-        T1_content = self.T1.get('0.0', 'end')
-
-        if T1_content.__contains__('oi diogo, vim falar com você.'):
-            self.T1.delete('0.0', 'end')
-            self.T1.insert('0.0',
-                           'Easter egg\nEspero que esteja bem!, como recompensa, toma aqui um pedaço: !3>|cF\nSomos capazes? honestamente, não sei. independente de como você estiver, te desejo toda a sorte, confio muito em ti.')
-
         Label(about_window, text='Notepad made in Python\nwith TKinter GUI\nver. 1.0', font=('Courier 14 bold')).pack(
             ipady=10)
         Label(about_window, text='Kodachi\n26/06/2023').pack(ipady=10, ipadx=10, fill=X)
