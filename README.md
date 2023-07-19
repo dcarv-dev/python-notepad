@@ -9,3 +9,5 @@ Functionalities:
 - Undo actions;
 - Change background color and font color.
 -----------------------------------------
+You need the following Python modules in order to use this code:
+- tkinter
